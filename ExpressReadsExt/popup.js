@@ -1,24 +1,19 @@
 
-const myBtn = document.getElementById('btn')
+const myBtn = document.getElementById('myBtn')
 
 myBtn.addEventListener('click', async()=>{
-    let [tab] = await chrome.tabs.query({ active: true, currentWindow: true })
-    console.log(tab.url)
-
-    var myTab  = tab.url
-   
-    
+  const [tab] = await chrome.tabs.query({active: true, currentWindow: true});
+  let myText;
+  try {
+    [{myText}] = await chrome.scripting.executeScript({
+      target: {tabId: tab.id},
+      function: () => getSelection().toString(),
+    });
+  } catch (e) {
+    return;}
+    document.getElementById('para').innerHTML = myText
+    document.getElementById('main').style.visibility = "visible"
     
 })
 
-
-// function showColor(){
-//     chrome.storage.sync.get('color', ({ color })=>{
-//         document.body.style.backgroundColor = color;
-        
-//         document.getElementById('hehe').textContent = color;
-     
-//     })
-
-   
-// }
+  

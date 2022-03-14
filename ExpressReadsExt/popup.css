@@ -1,12 +1,15 @@
 button {
-    height: 30px;
-    width: 50px;
-    outline: none;
+    height: fit-content;
+    width: fit-content;
     background: none;
     color: #F687B3;
-    margin: 10px;
+   margin: 5px;
+   margin-top: 5px !important;
+   margin-left: 10px;
+    padding: 5px;
     border: 2px solid #F687B3;
-    border-radius: 2px;
+    border-radius: 12px;
+    
   }
   
   button.current {
@@ -18,22 +21,40 @@ button {
       background-color: whitesmoke;
   }
 
+  .btn-group{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+  }
+
   body{
-      width: 300px;
-      height: 300px;
+      width: 500px;
+      height: 500px;
       background-color: #1A202C;
+      padding: 10px;
+      margin:0px !important;
   }
 
-  #hehe{
-      color: black;
+  header{
+      font-size: 3rem;
+      margin: 5px;
   }
-
-  h1 span{
+  header span{
     color: #F687B3;
   }
 
-  .main{
+  a{
+      color: #A0AEC0;
+      float: right;
+      margin-top: 5px;
+  }
+
+  #main{
       background-color: #2D3748;
-      height: 150px; width: 150px;
+      height: 60%; width: 75%;
+      margin: auto;
       border-radius: 5px;
+      padding: 10px;
+      font-size: 1rem;
   }
