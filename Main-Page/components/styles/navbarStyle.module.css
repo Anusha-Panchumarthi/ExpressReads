@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.navbar2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 100px;
+    background: black;
+  } 
+
+  .logoText {
+    margin: 9px;
+    font-family: 'Poppins';
+    color: white;
+  }
+
+  .navbar2_a{
+    display: block;
+    font-family: 'Montserrat';
+      padding: 30px;
+      font-size: 1.7em;
+      text-decoration: none;
+      color: white;
+  }
+
+  .navbar2_links{
+    display: flex;
+    flex-direction: row;
+
+  }
+
+
+  header .logoText span {
+    color: #F687B3;
+  }

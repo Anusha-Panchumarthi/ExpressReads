@@ -1,0 +1,22 @@
+
+.container{
+    background-color:#1A202C ;
+    color: #f5f5f5;
+    padding-bottom: 6rem;
+    
+}
+
+.mainDiv{
+    background-color: #2D3748;
+    overflow: visible;
+    padding-bottom: 6rem;
+}
+
+.myBox{
+    background: #2D3748;
+    border-radius: 12px;
+    width: 50%;
+    color: whitesmoke;
+    margin: auto;
+    box-shadow: 5px 5px 0 #F687B3;
+}
